@@ -63,6 +63,6 @@ if __name__ == '__main__':
 
     if args.output:
         with open(
-                os.path.join(args.output, f'res_{time.strftime("%Y%m%d_%H.%M.%S", time.localtime(time.time()))}.json'),
+                os.path.join(args.output, f'{args.output}.json'),
                 'w') as _f:
             _f.write(json.dumps(m_target))
